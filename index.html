@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EXAM 1 REVIEW</title>
+    <!--content literal network-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h2>FIRST LETS PLAY AROUND WITH HTML AND CSS</h2>
+    <p>HTML stands for HyperText Markup Language.<br>
+      A WEBPAGE is an html document that is connected to the web. <br>
+      A WEBSITE is a location connected to the internet that maintains the webpages. <br>
+      The INTERNET is a network of interconnected computers with internet protocol.<br>
+      The WWW is the information space where documents and web resources can be accessed via the internet.<br>
+      The WEB SERVER is a software that listens to a webpage and the WEB BROWSER displays the documents from the web server.</p>
+    <p>The first thing you shoUld know is that there are 4 improtant tags that belong to each html page and I will play around with a list.</p>
+      <ul>
+        <li>The HTML tag shows that the page will be written in html.</li>
+        <li>The HEAD tag contains all the information that will not be visible on the browser.</li>
+        <li>The TITLE tag is what will be displayed on the tab of the webpage.</li>
+        <li>The BODY tag will contain all the information that will display on the webpage.</li>
+      </ul>
+      <p>Now, lets not forget every tag has an opening and a closing. And many tags do have attributes that define the functionality of the tag.</p>
+      <h5>How many tags exist?</h5>
+      <ul>
+        <div id="pdiv"><li>the DIV tag allows the html page to be divided into sections.This list element is in its own div.</li></div>
+        <li>HEADINGS are the most interesting becuase they can change sizes.<h1>LARGEST</h1><h2>NEXT LARGEST</h2><h3>NOW THIS ONE</h3><h4>THEN THIS ONE</h4>
+          <h5>ALMOST DONE</h5><h6>LASTLY THIS ONE</h6></li>
+        <li><u>PARAGRAPHS</u> are also <i>interesting</i> because you can do <strong>a lot</strong> with a <span id="spanex">sentence</span>.</li>
+        <li>A tags are links that provide hyperlinks to other pages and websites.
+          <ul><li><a href="http://www.google.com/">GoogleLink</a></li></ul></li>
+        <li>IMG tag allows me to add any image I want to my document.<br>
+             <img src="imageofsloth.jpg" alt="cute sloth!"/></li>
+        <li>We can also make forms with the FORM tag and INPUT tags that are included.
+          <form  action="index.html" method="post">
+              RADIO BUTTONS:<input type="radio" name="boy" value="BOY">Boy Radio</input>
+                            <input type="radio" name="girl" value="GIRL">Girl Radio</input><br>
+              CHECKEDBOX:   <input type="checkbox" name="cute" value="CUTE">Cute</input>
+                            <input type="checkbox" name="cute" value="NOTCUTE">NotCute</input><br>
+              INPUT TEXT:   <input type="text" name="name" value="TypeHere">TYPED</input><br>
+              SUBMIT BUTTON:<input type="submit" value="onSUBMITbutton">SUBMITTED</input><br>
+              PASSWORD:     <input type="password"  value="PasswordTime"></input>
+         </form>
+          The GET method will grab the information from the user and display it on the url while the POST method will not diplay it, but still collect info.
+        </li>
+        <li>We can also use tables but I dont really want to go into that.
+          <table id="table">
+            <caption>Attempted Table</caption>
+            <tr>
+              <td>hot</td>
+              <td>lemonpepper</td></tr>
+            <tr>
+              <td>Pepperoni</td>
+              <td>Cheese</td>
+            </tr>
+          </table>
+        </li>
+        <li>The point of using LINK tag is to be able to access external resources such as CSS and JavaScript.
+          <ul>
+            <li>JAVASCRIPT: use link src="script.js"</li>
+            <li>CSS: link rel="stylesheet" href="style.css"</li>
+        </li>
+      </ul>
+      <h3>Now that we finished basic HTML, we can do CSS work!!!</h3>
+
+    <h2>NOW LETS PLAY WITH CSS</h2>
+      <p>CSS stands for Cascading StyleSheet and this will deal with the design of the HTML document.</p>
+      <p>There are different was of implementing CSS to your document.
+        <ul>
+          <li>INLINE CSS within the same line of the HTML element using style="proptery=value;"</li>
+          <li>INTERNAL CSS uses the STYLE tag at the head or the body of the same HTML document.EXAMPLE: style="color:red" will change the color of the text for the tag</li>
+          <li>EXTERNAL CSS uses a separate resource to provide the modifications of the HTML elements.</li>
+        </ul>
+      </p>
+      <p>It is possible to group and give tag multiple classes.</p>
+      <p> a CLASS will be given to a multiple tags that want to have the same style while ID will be given to a special unique element</p>
+      <h5>So what are the types of styles for CSS?</h5>
+      <ul>
+        <li>COMMENTS: /**comment**/</li>
+        <li>BACKGROUND-COLOR: will color the background of the element</li>
+            <p id="bgcolor"> ex: I like to eat chicken wings.</p>
+        <li>COLOR: will color the text of the element</li>
+            <p id="color"> ex: I like to eat chicken wings.</p>
+        <li>TEXT-ALIGN: will align the text of the element</li>
+            <p id="align"> ex: I like to eat chicken wings.</p>
+        <li>FONT-FAMILY: will change the font of the element</li>
+            <p id="font"> ex: I like to eat chicken wings.</p>
+        <li>FONT-SIZE: will change the font of the element</li>
+            <p id="size"> ex: I like to eat chicken wings.</p>
+        <li>FLOAT: takes away the blocking style of elements and lets them float so the other elements move around it</li>
+            <p id="float"> ex: I like to eat chicken wings.</p>
+        <li>WIDTH: width of an image</li>
+            <img src="imageofsloth.jpg" id="width"/>
+        <li>HEIGHT: height of an image</li>
+            <img src="imageofsloth.jpg" id="height"/>
+        <li>MARGIN: space outside of the border</li>
+        <li>PADDING: space between border and element</li>
+            <p id="margin-padding"> ex: I like to eat chicken wings.</p>
+        <li>MAX-WIDTH: improves handling with small windows for text</li>
+            <p id="maxwidth"> ex: I like to eat chicken wings.</p>
+        <li>OVERFLOW: makes sure everything fits in the threshold of the screen</li>
+        <li>EVENT LISTENER: attaching an event to an element when something happens to the element, it will change.</li>
+        <li>POSITION: the position of the elements</li>
+          <ul>
+            <li>FIXED: element is positioned relative to browser screen</li>
+                <p id="fixpos"> (FIXED POSITION) ex: I like to eat chicken wings.</p>
+            <li>RELATIVE: positioned relative to normal position</li>
+                <p id="relpos"> ex: I like to eat chicken wings.</p>
+            <li>ABSOULTE: positioned relative to first ancestor</li>
+                <p id="abspos"> ex: I like to eat chicken wings.</p>
+            <li>STATIC: positioned according to flow of page</li>
+                <p id="staticpos"> ex: I like to eat chicken wings.</p>
+          </ul>
+        <li>DISPLAY: specifies how an element is displayed</li>
+          <ul>
+            <li>INLINE: default value that displays element as inline element across the screen taking up as much space as they need</li>
+                <p id="inline"> ex: I like to eat chicken wings.</p>
+            <li>BLOCK: displays element as block element</li>
+                <p id="block"> ex: I like to eat chicken wings.</p>
+            <li>INLINE-BLOCK: displays as inline level blocks</li>
+                <p id="inlineblock"> ex: I like to eat chicken wings.</p>
+          </ul>
+        <li>BACKGROUND-IMAGE: allows the background to be an image</li>
+      </ul>
+      <p></p>
+
+    <h2>IT'S JAVASCRIPT TIME</h2>
+      <p>There are many things that one can do with JavaScript. Especially with buttons.</p>
+      <p>First I can make a paragraph alert the screen.</p>
+      <p onclick="alert('YOU CLICKED THE PARAGRAGH!')">ALERT</p>
+      <p id="d2" onclick="document.getElementById('d2').style.color='red';">This paragraph will change red when clicked.</p>
+      <p id="d3" onclick="changeColor('d3')">This paragraph will change teal using a function.</p>
+      <p id="d4" onmouseover="document.getElementById('d4').style.color='orange';" onmouseout="document.getElementById('d4').style.color='blue';">
+        This paragraph will change to orange when mouse over it and blue when mouse not over it.</p>
+      <p>We can also use buttons and use JavaScript functions.</p>
+      <p id="d5">For instance this button will change this paragraph when you CLICK(orange). </p>
+        <button type="button" onclick="document.getElementById('d5').style.color='orange';" >Changes paragraph to orange.</button>
+      <p id="d6">For instance this button will change this paragraph when you MOUSEOVER(purple).</p>
+        <button type="button" onmouseover="document.getElementById('d6').style.color='purple';" >Changes paragraph to purple.</button>
+        <p id="d7">For instance this button will change this paragraph when you ONMOUSEOUT(pink).</p>
+          <button type="button" onmouseout="document.getElementById('d7').style.color='pink';" >Changes paragraph to pink.</button><br><br>
+      <button type="button" ondblclick="this.innerHTML='Bubblegum.'">This button will change to "Bubblegum" when double clicked.</button><br><br>
+      <button onmouseover="mOver(this)" onmouseout="mOut(this)">The button will change text hover and leave over it.</button>
+      <p id="d8" onclick="myObj('d8')">We can also work with objects in JavaScript. See?</p>
+      <h5>There are a lot of things that JavaScript can do but...</h5>
+
+    <h2>WHO DOESN'T WANT TO PRACTICE JQUERY?</h2>
+      <p>JQUERY is a library for Javascript to try and simplify the program. It has to be imported and can link to content delivery network instead of downloading it.</p>
+      <p>There are many events we can do with JQuery that will be displayed.</p>
+      <p id="p1">This paragraph will disappear when it is clicked on using CLICK.</p>
+      <p id="p2">This paragraph will disappear when it is double clicked on using DBLCLICK.</p>
+      <p id="p3">This paragraph will change the background to pink when you hover over it using MOUSEENETER.</p>
+      <p id="p4">This paragraph will change blue when leave the element using MOUSELEAVE.</p>
+      <p id="p5">This paragraph will alert when hold down on the element using MOUSEDOWN.</p>
+      <p id="p6">This paragraph will grow size when let go of element using MOUSEUP.</p>
+      <p id="p7">This paragraph will change blue when hover over and green when not hovering using HOVER.</p>
+      <p>Now, we can use FOCUS and BLUR when dealing with inputs.</p>
+        <input type="text" name="Type" value="TypeHere"></input>
+      <p id="p8">We can also do multiple functions to one element with ON. This paragraph will change color when you MOUSEENTER(blue), MOUSELEAVE(green),CLICK(pink), MOUSEDOWN(red).</p>
+    <script>
+          //JavaScript
+          //function that will change color of element
+          function changeColor(id){
+            document.getElementById(id).style.color="teal";
+          }
+          //function that changes text when hover over button
+          function mOver(obj){
+            obj.innerHTML =" HOVERING";
+          }
+          function mOut(obj){
+            obj.innerHTML ="NOT ANYMORE";
+          }
+          //working with objects
+          function myObj(id){
+              var obj={name:"Alma", age:21, boyfriend:"Sebastian"};
+              document.getElementById(id).innerHTML="My name is "+obj.name+" and I am "+obj.age+" and in love with my boyfriend, "+obj.boyfriend;
+          }
+          //JQUERY
+        $(document).ready(function(){ //on document load, do everything inside ready
+            //click event to hide element
+            $("#p1").click(function(){
+                $(this).hide();       //applies to any function in jquery and javascript
+            });
+            //double click event to hide element
+            $("#p2").dblclick(function(){
+                $(this).hide();
+            });
+            //mouserener when hover element
+            $("#p3").mouseenter(function(){
+                $(this).css("background-color","pink");
+            });
+            //mouseleave event when hover away from element
+            $("#p4").mouseleave(function(){
+                $(this).css("color", "blue");
+            });
+            //holding down on the element
+            $("#p5").mousedown(function(){
+                alert("HOLDING DOWN ON ME!!");
+            });
+            //when element released
+            $("#p6").mouseup(function(){
+                $(this).css("font-size", "30px");
+            });
+            // -Hover-hover() //conbimes mouseover and mouseleave
+            $("#p7").hover(function(){
+                $(this).css("color", "lightblue");
+              },
+              function(){
+                $(this).css("color","lightgreen");
+              });
+              //using FOCUS to change color of background of input element
+              $("input").focus(function(){
+                $(this).css("background-color", "grey");
+              });
+              //using BLUR when leave input box
+              $("input").blur(function(){
+                $(this).css("background-color", "orange");
+              });
+              //using ON to perform many functions to an element
+              $("#p8").on({
+                mouseenter:function(){
+                  $(this).css("color", "blue");
+                },
+                mouseleave:function(){
+                  $(this).css("color", "green");
+                },
+                mousedown:function(){
+                  $(this).css("color", "red");
+                },
+                mouseup:function(){
+                  $(this).css("color", "purple");
+                },
+                click:function(){
+                  $(this).css("color","pink");
+                }
+              });
+              $("p").css("font-size", "20px");
+
+       });//end document
+      </script>
+  </body>
+</html>

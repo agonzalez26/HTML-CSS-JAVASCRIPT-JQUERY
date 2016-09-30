@@ -8,8 +8,10 @@ body{
 #spanex{
   background-color:lightgreen;
 }
+
 #table{
   border: 1px dotted blue;
+
 }
 /**Working with CSS examples**/
 #bgcolor{
@@ -28,6 +30,7 @@ body{
   font-size: 25px;
 }
 #float{
+  background-color:grey;
   float:right;
 }
 #width{
@@ -45,6 +48,25 @@ body{
   border: 1px solid pink;
   max-width: 70px;
 }
+#overflow1{
+  overflow: visible;
+  width:70px;
+  height: 70px;
+  background-color:purple;
+
+}
+#overflow2{
+  overflow: hidden;
+  width:70px;
+  height: 70px;
+  background-color:green;
+}
+#overflow3{
+  overflow: scroll;
+  width:70px;
+  height: 70px;
+  background-color:lightblue;
+}
 #fixpos{
   background-color: pink;
   border: 1px solid blue;
@@ -55,14 +77,17 @@ body{
 #relpos{
   border: 1px solid purple;
   position: relative;
+  background-color:lightyellow;
 }
 #abspos{
   border: 1px solid magenta;
   position: absolute;
+  background-color:lightblue;
 }
 #staticpos{
   border: 1px solid orange;
   position: static;
+  background-color: lightgreen;
 }
 #inline{
   border: 1px dotted teal;

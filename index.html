@@ -6,7 +6,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
-
   <body>
     <h2>FIRST LETS PLAY AROUND WITH HTML AND CSS</h2>
     <p>HTML stands for HyperText Markup Language.<br>
@@ -15,7 +14,7 @@
       The INTERNET is a network of interconnected computers with internet protocol.<br>
       The WWW is the information space where documents and web resources can be accessed via the internet.<br>
       The WEB SERVER is a software that listens to a webpage and the WEB BROWSER displays the documents from the web server.</p>
-    <p>The first thing you shoUld know is that there are 4 improtant tags that belong to each html page and I will play around with a list.</p>
+    <p>The first thing you shoUld know is that there are 4 important tags that belong to each html page and I will play around with a list.</p>
       <ul>
         <li>The HTML tag shows that the page will be written in html.</li>
         <li>The HEAD tag contains all the information that will not be visible on the browser.</li>
@@ -33,6 +32,9 @@
           <ul><li><a href="http://www.google.com/">GoogleLink</a></li></ul></li>
         <li>IMG tag allows me to add any image I want to my document.<br>
              <img src="imageofsloth.jpg" alt="cute sloth!"/></li>
+        <li>We can also make images be used as links to something else.
+          <ul>
+            <li><a href="https://www.pinterest.com/explore/sloth-memes/"><img src="imageofsloth.jpg"/></a></li>
         <li>We can also make forms with the FORM tag and INPUT tags that are included.
           <form  action="index.html" method="post">
               RADIO BUTTONS:<input type="radio" name="boy" value="BOY">Boy Radio</input>
@@ -45,12 +47,17 @@
          </form>
           The GET method will grab the information from the user and display it on the url while the POST method will not diplay it, but still collect info.
         </li>
+        <li>This is an example of a functional form that goes to google.
+          <form action="http://www.google.com/" method="GET">
+            <label>Search:<input type="text" name="q"></input></label>
+            Submit:   <input type="submit" target="_blank" value="SEARCHBUTTON">SUBMIT</button>
+          </form></li>
         <li>We can also use tables but I dont really want to go into that.
           <table id="table">
             <caption>Attempted Table</caption>
             <tr>
-              <td>hot</td>
-              <td>lemonpepper</td></tr>
+              <td>Spicy</td>
+              <td>Lemonpepper</td></tr>
             <tr>
               <td>Pepperoni</td>
               <td>Cheese</td>
@@ -63,19 +70,23 @@
             <li>CSS: link rel="stylesheet" href="style.css"</li>
         </li>
       </ul>
-      <h3>Now that we finished basic HTML, we can do CSS work!!!</h3>
+      <h3>Now that we finished basic HTML, we can do some CSS work!!!</h3>
 
     <h2>NOW LETS PLAY WITH CSS</h2>
       <p>CSS stands for Cascading StyleSheet and this will deal with the design of the HTML document.</p>
       <p>There are different was of implementing CSS to your document.
         <ul>
           <li>INLINE CSS within the same line of the HTML element using style="proptery=value;"</li>
-          <li>INTERNAL CSS uses the STYLE tag at the head or the body of the same HTML document.EXAMPLE: style="color:red" will change the color of the text for the tag</li>
+          <li>INTERNAL CSS uses the STYLE tag at the head or the body of the same HTML document.EXAMPLE: style="color:red" changes color of text for tag</li>
           <li>EXTERNAL CSS uses a separate resource to provide the modifications of the HTML elements.</li>
         </ul>
       </p>
-      <p>It is possible to group and give tag multiple classes.</p>
-      <p> a CLASS will be given to a multiple tags that want to have the same style while ID will be given to a special unique element</p>
+      <p>It is possible to group and give tag multiple classes.
+        <ul>
+          <li>For instance, you can have p, h1, div{background-color:purple;} and it will be valid.</li>
+        </ul>
+      </p>
+      <p>A CLASS will be given to a multiple tags that want to have the same style while ID will be given to a special unique element</p>
       <h5>So what are the types of styles for CSS?</h5>
       <ul>
         <li>COMMENTS: /**comment**/</li>
@@ -101,17 +112,22 @@
         <li>MAX-WIDTH: improves handling with small windows for text</li>
             <p id="maxwidth"> ex: I like to eat chicken wings.</p>
         <li>OVERFLOW: makes sure everything fits in the threshold of the screen</li>
+          <ul>
+            <li><p id="overflow1">This sentence is too much for the box and it is overflowing and VISIBLE.</p><br><br></li>
+            <li><p id="overflow2">This sentence is too much for the box and it is overflowing and HIDDEN.</p><br><br></li>
+            <li><p id="overflow3">This sentence is too much for the box and it is overflowing and SCROLL.</p></li>
+          </ul>
         <li>EVENT LISTENER: attaching an event to an element when something happens to the element, it will change.</li>
         <li>POSITION: the position of the elements</li>
           <ul>
             <li>FIXED: element is positioned relative to browser screen</li>
                 <p id="fixpos"> (FIXED POSITION) ex: I like to eat chicken wings.</p>
             <li>RELATIVE: positioned relative to normal position</li>
-                <p id="relpos"> ex: I like to eat chicken wings.</p>
+                <p id="relpos"> (RELATIVE POSITION) ex: I like to eat chicken wings.</p>
             <li>ABSOULTE: positioned relative to first ancestor</li>
-                <p id="abspos"> ex: I like to eat chicken wings.</p>
+                <p id="abspos"> (ABSOLUTE POSITION) ex: I like to eat chicken wings.</p>
             <li>STATIC: positioned according to flow of page</li>
-                <p id="staticpos"> ex: I like to eat chicken wings.</p>
+                <p id="staticpos">(STATIC POSITION) ex: I like to eat chicken wings.</p>
           </ul>
         <li>DISPLAY: specifies how an element is displayed</li>
           <ul>
@@ -122,28 +138,29 @@
             <li>INLINE-BLOCK: displays as inline level blocks</li>
                 <p id="inlineblock"> ex: I like to eat chicken wings.</p>
           </ul>
-        <li>BACKGROUND-IMAGE: allows the background to be an image</li>
+        <li>BACKGROUND-IMAGE: allows the background to be an image like the design currently displayed.</li>
       </ul>
-      <p></p>
-
     <h2>IT'S JAVASCRIPT TIME</h2>
-      <p>There are many things that one can do with JavaScript. Especially with buttons.</p>
-      <p>First I can make a paragraph alert the screen.</p>
+      <p>There are many things that one can do with JavaScript.</p>
+      <p>First I can make a paragraph ALERT ACTION the screen with ONCLICK event.</p>
       <p onclick="alert('YOU CLICKED THE PARAGRAGH!')">ALERT</p>
       <p id="d2" onclick="document.getElementById('d2').style.color='red';">This paragraph will change red when clicked.</p>
-      <p id="d3" onclick="changeColor('d3')">This paragraph will change teal using a function.</p>
+      <p id="d3" onclick="changeColor('d3')">This paragraph will change teal using a function and ONCLICK event.</p>
       <p id="d4" onmouseover="document.getElementById('d4').style.color='orange';" onmouseout="document.getElementById('d4').style.color='blue';">
         This paragraph will change to orange when mouse over it and blue when mouse not over it.</p>
       <p>We can also use buttons and use JavaScript functions.</p>
-      <p id="d5">For instance this button will change this paragraph when you CLICK(orange). </p>
-        <button type="button" onclick="document.getElementById('d5').style.color='orange';" >Changes paragraph to orange.</button>
+      <p id="d5">For instance this button will change this paragraph above when you CLICK(orange). </p>
+        <button type="button" onclick="document.getElementById('d5').style.color='orange';" >Changes paragraph above to orange.</button>
       <p id="d6">For instance this button will change this paragraph when you MOUSEOVER(purple).</p>
-        <button type="button" onmouseover="document.getElementById('d6').style.color='purple';" >Changes paragraph to purple.</button>
+        <button type="button" onmouseover="document.getElementById('d6').style.color='purple';" >Changes paragraph above to purple.</button>
         <p id="d7">For instance this button will change this paragraph when you ONMOUSEOUT(pink).</p>
-          <button type="button" onmouseout="document.getElementById('d7').style.color='pink';" >Changes paragraph to pink.</button><br><br>
-      <button type="button" ondblclick="this.innerHTML='Bubblegum.'">This button will change to "Bubblegum" when double clicked.</button><br><br>
-      <button onmouseover="mOver(this)" onmouseout="mOut(this)">The button will change text hover and leave over it.</button>
-      <p id="d8" onclick="myObj('d8')">We can also work with objects in JavaScript. See?</p>
+          <button type="button" onmouseout="document.getElementById('d7').style.color='pink';" >Changes paragraph above to pink.</button><br><br>
+      <p>This button below will change to "Bubblegum" using DBLCLICK</p>
+      <button type="button" ondblclick="this.innerHTML='Bubblegum'">Changed from "Airheads" to...</button><br><br>
+      <button onmouseover="mOver(this)" onmouseout="mOut(this)">The button will change text hover and leave over it using ONMOUSEOVER and ONMOUSEOUT.</button>
+      <p>We can also return Javascript objects with methods with a click. Look at the next paragraph.</p>
+      <p id="d8" onmouseover="myObj('d8')" onclick="document.getElementById('d8').innerHTML ='JK'">
+          We can also work with objects in JavaScript with CLICK. See?</p>
       <h5>There are a lot of things that JavaScript can do but...</h5>
 
     <h2>WHO DOESN'T WANT TO PRACTICE JQUERY?</h2>
@@ -158,14 +175,15 @@
       <p id="p7">This paragraph will change blue when hover over and green when not hovering using HOVER.</p>
       <p>Now, we can use FOCUS and BLUR when dealing with inputs.</p>
         <input type="text" name="Type" value="TypeHere"></input>
-      <p id="p8">We can also do multiple functions to one element with ON. This paragraph will change color when you MOUSEENTER(blue), MOUSELEAVE(green),CLICK(pink), MOUSEDOWN(red).</p>
+      <p id="p8">Multiple functions to one element with ON event. This paragraph will change color when you MOUSEENTER(blue), MOUSELEAVE(green),CLICK(pink), MOUSEDOWN(red).</p>
+      <h2 style="text-align:center;">Now that we have gone over HTML CSS, JAVASCRIPT, and JQUERY, good luck:):)</h2>
     <script>
           //JavaScript
           //function that will change color of element
           function changeColor(id){
             document.getElementById(id).style.color="teal";
           }
-          //function that changes text when hover over button
+          //function that changes text when hover  and away button
           function mOver(obj){
             obj.innerHTML =" HOVERING";
           }
@@ -174,7 +192,7 @@
           }
           //working with objects
           function myObj(id){
-              var obj={name:"Alma", age:21, boyfriend:"Sebastian"};
+              var obj={name:"Alma", age:21, boyfriend:"Sebastian."};
               document.getElementById(id).innerHTML="My name is "+obj.name+" and I am "+obj.age+" and in love with my boyfriend, "+obj.boyfriend;
           }
           //JQUERY
@@ -235,9 +253,7 @@
                 click:function(){
                   $(this).css("color","pink");
                 }
-              });
-              $("p").css("font-size", "20px");
-
+              });//end on function
        });//end document
       </script>
   </body>
